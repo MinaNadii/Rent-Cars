@@ -1,10 +1,9 @@
-import React from "react";
 import LogoImg from "../../assets/Logo.png";
 
 const Logo = () => {
   return (
     <>
-      <div className="">
+      <div className="w-[170px] px-4 ">
         <img src={LogoImg} alt="Logo" className="w-full" />
       </div>
     </>
