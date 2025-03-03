@@ -23,6 +23,8 @@
   .bg-mainColor {
     --mainColor: #0b5ed7;
     --hoverColor: #0b41d7;
+    --hoverColor: #ffffff2d;
+
     background-color: var(--mainColor);
     &:hover {
       background-color: var(--hoverColor);
