@@ -4,15 +4,13 @@ import { fetchAllCars } from "../../../services/CarAPI";
 import HeaderCards from "../../Elements/HeaderCards";
 import InputSearch from "./InputSearch";
 import CarList from "./CarList";
-import Cars from "../../../Pages/Cars/Cars";
 import { MoveRight } from "lucide-react";
 
 const CarSection = () => {
   const [cars, setCars] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showAll, setShowAll] = useState(false);
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const carsPerPage = 16; // Change this to your preferred pagination count
+
   useEffect(() => {
     const getCars = async () => {
       const data = await fetchAllCars();
@@ -24,7 +22,6 @@ const CarSection = () => {
 
   if (loading) return <p className="text-center">Loading cars...</p>;
 
-  // Show only first 4 cars if not showing all
   const displayedCars = showAll ? paginatedCars : cars.slice(0, 4);
 
   return (
@@ -39,7 +36,7 @@ const CarSection = () => {
         </header>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-5">
           {displayedCars.map((car, index) => (
-            <CarList key={car.id} car={car} index={index}/> // Passing car data as props
+            <CarList key={car.id} car={car} index={index} />
           ))}
         </div>
         <div className="mt-5   w-fit mx-auto">

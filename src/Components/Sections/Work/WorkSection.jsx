@@ -1,4 +1,3 @@
-import React from "react";
 import HeaderCards from "../../Elements/HeaderCards";
 import Services from "./Services";
 import CalenderIcon from "../../../assets/calender-icon.png";

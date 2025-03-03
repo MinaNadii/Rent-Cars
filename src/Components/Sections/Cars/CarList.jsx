@@ -19,7 +19,7 @@ const CarList = ({ car, index }) => {
       <div className=" w-full h-full border-1 border-gray-500/50 rounded-md">
         <div className="flex justify-center">
           <img
-            src={carImages[index % carImages.length]} // ✅ Fix image access
+            src={carImages[index % carImages.length]} 
             alt={car.name || "Car"}
             className="h-1/3  object-cover px-10 pb-5 pt-10"
           />
