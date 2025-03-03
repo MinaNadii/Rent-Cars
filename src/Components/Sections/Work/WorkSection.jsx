@@ -64,7 +64,7 @@ const WorkSection = () => {
           />
         </header>
 
-          <Services props={steps} />
+        <Services props={steps} />
         <div className="my-20">
           <Clients clientsLogo={clientsLogo} />
         </div>

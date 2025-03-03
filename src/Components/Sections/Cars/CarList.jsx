@@ -17,16 +17,22 @@ const CarList = ({ car, index }) => {
   return (
     <>
       <div className=" w-full h-full border-1 border-gray-500/50 rounded-md">
-        <img src={car1} alt="" className="w-full object-cover px-10 pt-10" />
+        <div className="flex justify-center">
+          <img
+            src={carImages[index % carImages.length]} // ✅ Fix image access
+            alt={car.name || "Car"}
+            className="h-1/3  object-cover px-10 pb-5 pt-10"
+          />
+        </div>
+
         <div className="flex flex-col items-start p-3 text-gray-700">
           <div className="flex gap-2 px-3 items-center justify-between w-full">
-            <h1 className="text-start font-bold">Car Name</h1>
+            <h1 className="text-start font-bold">{car.car}</h1>
             <div className="flex items-center gap-2">
               <Star size={20} color="#facc15" fill="#facc15" />
               <span>(999 Review)</span>
             </div>
           </div>
-
           <div className="px-3 py-5 border-b-1 border-gray-500/50 flex justify-between flex-wrap gap-2">
             <div className="flex gap-2 px-3 items-center">
               <User />
@@ -48,11 +54,12 @@ const CarList = ({ car, index }) => {
 
           <div className="flex w-full p-3  items-center justify-between">
             <p>Price</p>
-            <p>$00000</p>
+            <p>{car.price}/day</p>
           </div>
 
           <Link
-            to={`/cars/${index}`}
+            state={{ car }}
+            to={`/cars/${car.id}`}
             className="px-3 py-2 flex  justify-center items-center gap-4 bg-mainColor transition-all  duration-400 ease-in-out group w-full text-center text-white rounded-lg"
           >
             View Details
@@ -60,8 +67,6 @@ const CarList = ({ car, index }) => {
           </Link>
         </div>
       </div>
-
-      
     </>
   );
 };

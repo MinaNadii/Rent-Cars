@@ -3,6 +3,9 @@ import Icon1 from "../../../assets/Experience/ChatIcon.png";
 import Icon2 from "../../../assets/Experience/HourIcon.png";
 import Icon3 from "../../../assets/Experience/MoneyIcon.png";
 import Icon4 from "../../../assets/Experience/PersonIcon.png";
+import ServicesCards from "./ServicesCards";
+import bgImg from "../../../assets/Experience/Vector.png";
+import Car from "../../../assets/Experience/Audi 1.png";
 
 const servies = [
   {
@@ -35,14 +38,30 @@ const servies = [
 const Experience = () => {
   return (
     <>
-      <section className="myContainer ">
+      <section className="">
         <header className="flex flex-col gap-3 px-4 text-center items-center">
           <HeaderCards
             h2={"why choose us"}
             p={"We offer the best experience with our rental deals"}
           />
         </header>
-        
+        <div
+          className="flex fkex-wrap justify-center items-center w-full h-full "
+          style={{
+            backgroundImage: `url(${bgImg})`,
+            backgroundPosition: "center left ",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            overflow: "hidden",
+          }}
+        >
+          <div className="max-md:hidden md:w-1/2">
+            <img src={Car} alt="Car" />
+          </div>
+          <div className="md:w-1/2 w-full">
+            <ServicesCards props={servies} />
+          </div>
+        </div>
       </section>
     </>
   );

@@ -2,6 +2,7 @@ import Framebg from "../../assets/Frame.png";
 import HeroCar from "../../assets/HeroCar.png";
 import CarsCards from "../../Components/Sections/Cars/CarSection";
 import Experience from "../../Components/Sections/Experience/Experience";
+import Testimonials from "../../Components/Sections/Testimonials/Testimonials";
 import Work from "../../Components/Sections/Work/WorkSection";
 import Conntent from "./Content";
 
@@ -34,6 +35,10 @@ const Home = () => {
       {/* Experience Section */}
       <div className=" mt-[3rem] w-full ">
         <Experience />
+      </div>
+      {/* Experience Section */}
+      <div className=" mt-[3rem] w-full ">
+        <Testimonials />
       </div>
     </>
   );

@@ -20,7 +20,7 @@ const App = () => {
           element: <Cars />,
         },
         {
-          path: "cars/:carId",
+          path: "cars/:id",
           element: <CarDetails />,
         },
       ],

@@ -1,22 +1,28 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 import "swiper/css";
-
+import "swiper/css/free-mode";
+import "swiper/css/autoplay";
+import { FreeMode, Autoplay } from "swiper/modules";
 const Clients = ({ clientsLogo }) => {
   return (
     <Swiper
-      style={{ marginTop: "20px" }}
+      style={{ marginTop: "20px", overflow: "hidden" }}
       spaceBetween={20}
-      slidesPerView={3.5}
-      centeredSlides={true}
-      modules={[Autoplay]}
+      slidesPerView={"auto"}
+      centeredSlides={false}
+      modules={[Autoplay, FreeMode]}
       breakpoints={{
-        640: { slidesPerView: 1 }, // Small screens (sm)
-        768: { slidesPerView: 2 }, // Medium screens (md)
-        1024: { slidesPerView: 3 }, // Large screens (lg)
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
       }}
+      freeMode={true}
+      freeModeMomentum={false}
+      freeModeMomentumRatio={3}
+      freeModeMomentumBounce={false}
+      speed={2000}
       autoplay={{
-        delay: 2500,
+        delay: 0,
         disableOnInteraction: false,
       }}
       loop={true}
