@@ -7,7 +7,7 @@ const Clients = ({ clientsLogo }) => {
   return (
     <Swiper
       style={{ marginTop: "20px", overflow: "hidden" }}
-      spaceBetween={20}
+      spaceBetween={10}
       slidesPerView={"auto"}
       centeredSlides={false}
       modules={[Autoplay, FreeMode]}

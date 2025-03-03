@@ -4,7 +4,7 @@ const Services = ({ props }) => {
       {props.map((step) => (
         <div
           key={step.id}
-          className="flex flex-col items-center w-full md:w-1/3 gap-4 text-center"
+          className="flex flex-col items-center w-full md:w-[30%] gap-4 text-center"
         >
           <div className=" p-5 rounded-2xl">
             <img src={step.icon} alt="" className="w-full" />
