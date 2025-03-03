@@ -4,7 +4,7 @@ import CarList from "../../Components/Sections/Cars/CarList";
 
 const Cars = () => {
   const [cars, setCars] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const getCars = async () => {
