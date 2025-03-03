@@ -1,6 +1,8 @@
 import Framebg from "../../assets/Frame.png";
 import HeroCar from "../../assets/HeroCar.png";
 import CarsCards from "../../Components/Sections/Cars/CarSection";
+import Experience from "../../Components/Sections/Experience/Experience";
+import Work from "../../Components/Sections/Work/WorkSection";
 import Conntent from "./Content";
 
 const Home = () => {
@@ -24,6 +26,14 @@ const Home = () => {
       {/* Cars Search and Cards */}
       <div className=" mt-[50rem] w-full z-[9999]">
         <CarsCards />
+      </div>
+      {/* About Section */}
+      <div className=" mt-[3rem] w-full ">
+        <Work />
+      </div>
+      {/* Experience Section */}
+      <div className=" mt-[3rem] w-full ">
+        <Experience />
       </div>
     </>
   );
