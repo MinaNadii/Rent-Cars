@@ -6,6 +6,7 @@ import Testimonials from "../../Components/Sections/Testimonials/Testimonials";
 import Work from "../../Components/Sections/Work/WorkSection";
 import Conntent from "./Content";
 import Form from "../../Components/Sections/Form/Form";
+import Footer from "../../Components/Sections/Footer/Footer";
 
 const Home = () => {
   return (
@@ -45,6 +46,7 @@ const Home = () => {
       <section className=" mt-[3rem] w-full  ">
         <Form />
       </section>
+      <Footer />
     </>
   );
 };
