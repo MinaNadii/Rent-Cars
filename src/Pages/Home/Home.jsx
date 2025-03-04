@@ -38,11 +38,11 @@ const Home = () => {
         <Experience />
       </section>
       {/* Experience Section */}
-      <section className=" mt-[1rem] w-full  ">
+      <section className=" mt-[4rem] w-full  ">
         <Testimonials />
       </section>
       {/* Form Section */}
-      <section className=" mt-[1rem] w-full  ">
+      <section className=" mt-[3rem] w-full  ">
         <Form />
       </section>
     </>
