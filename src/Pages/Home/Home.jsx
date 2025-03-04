@@ -37,7 +37,7 @@ const Home = () => {
         <Experience />
       </div>
       {/* Experience Section */}
-      <div className=" mt-[1rem] w-full ">
+      <div className=" mt-[1rem] w-full  ">
         <Testimonials />
       </div>
     </>
