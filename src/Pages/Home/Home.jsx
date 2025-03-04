@@ -1,3 +1,4 @@
+import { Form } from "react-router-dom";
 import Framebg from "../../assets/Frame.png";
 import HeroCar from "../../assets/HeroCar.png";
 import CarsCards from "../../Components/Sections/Cars/CarSection";
@@ -9,7 +10,7 @@ import Conntent from "./Content";
 const Home = () => {
   return (
     <>
-      <div className="absolute top-0 left-0 h-3/4 w-full z-0">
+      <section className="absolute top-0 left-0 h-3/4 w-full z-0">
         <div
           className="h-full w-full bg-no-repeat bg-contain bg-[position:0_0] sm:bg-[position:top_right] relative flex justify-center items-center lg:justify-start z-0"
           style={{ backgroundImage: `url(${Framebg})` }}
@@ -22,24 +23,28 @@ const Home = () => {
           {/* Hero Content  */}
           <Conntent />
         </div>
-      </div>
+      </section>
 
       {/* Cars Search and Cards */}
-      <div className=" mt-[50rem] w-full z-[9999]">
+      <section className=" mt-[50rem] w-full z-[9999]">
         <CarsCards />
-      </div>
+      </section>
       {/* About Section */}
-      <div className=" mt-[3rem] w-full ">
+      <section className=" mt-[3rem] w-full ">
         <Work />
-      </div>
+      </section>
       {/* Experience Section */}
-      <div className=" mt-[3rem] w-full ">
+      <section className=" mt-[3rem] w-full ">
         <Experience />
-      </div>
+      </section>
       {/* Experience Section */}
-      <div className=" mt-[1rem] w-full  ">
+      <section className=" mt-[1rem] w-full  ">
         <Testimonials />
-      </div>
+      </section>
+      {/* Form Section */}
+      <section className=" mt-[1rem] w-full h-scre ">
+        <Form />
+      </section>
     </>
   );
 };

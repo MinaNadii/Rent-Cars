@@ -1,8 +1,7 @@
-import React from "react";
 import HeaderCards from "../../Elements/HeaderCards";
-import bgImg from "../../../assets/Testimonials/bg-sec6.png";
 import girl from "../../../assets/Testimonials/girl.png";
 import man from "../../../assets/Testimonials/man.png";
+import BgImg from "../../../assets/Testimonials/bg-img.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -49,7 +48,14 @@ const testimonialsData = [
 const Testimonials = () => {
   return (
     <>
-      <section>
+      <section
+        style={{
+          backgroundImage: `url(${BgImg})`,
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <header className="flex flex-col gap-3 px-4 text-center items-center">
           <HeaderCards h2={"testimonials"} p={"what people say about us?"} />
         </header>
