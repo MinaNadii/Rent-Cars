@@ -4,6 +4,7 @@ import { RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import CarDetails from "./Pages/Cars/CarDetails";
 import Cars from "./Pages/Cars/Cars";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -30,6 +31,7 @@ const App = () => {
   return (
     <>
       <RouterProvider router={router}></RouterProvider>
+      <SpeedInsights />
     </>
   );
 };
