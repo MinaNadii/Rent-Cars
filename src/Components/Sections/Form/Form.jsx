@@ -1,4 +1,4 @@
-import Iphone from "../../../assets/iphone.png";
+import Phone from "../../../assets/iphone.png";
 import ios from "../../../assets/ios.png";
 import andriod from "../../../assets/andriod.png";
 
@@ -36,7 +36,7 @@ const Form = () => {
             </div>
           </div>
           <div className="flex justify-center text-center  ">
-            <img src={Iphone} alt="Iphone" className="w-[400px] " />
+            <img src={Phone} alt="Iphone" className="w-[400px] " />
           </div>
         </div>
       </div>
