@@ -60,27 +60,42 @@ const Testimonials = () => {
           <HeaderCards h2={"testimonials"} p={"what people say about us?"} />
         </header>
 
-        <div className="over">
+        <div className="p-10 ">
           <Swiper
-            style={{ marginTop: "20px" }}
+            loop={true}
             spaceBetween={10}
             slidesPerView={"auto"}
-            centeredSlides={true}
+            // centeredSlides={true}
             modules={[Autoplay]}
             breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 1,
+                spaceBetween: 40,
+              },
+              1200: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+              },
+
+              1400: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
             }}
             autoplay={{
               delay: 2000,
               disableOnInteraction: false,
             }}
-            loop={true}
+            // className="mySwiper "
           >
             {testimonialsData.map((person, index) => (
-              <div className="" key={index}>
-                <SwiperSlide className="bg-white">
-                  <div className="flex  shadow-lg !w-[500px] px-4 rounded-2xl">
+              <div className="flex justify-center" key={index}>
+                <SwiperSlide className="!flex !justify-center !items-center">
+                  <div className="flex mx-auto bg-white shadow-lg !w-[500px]  rounded-2xl">
                     <img
                       src={person.image}
                       alt={`Client Logo ${index}`}
