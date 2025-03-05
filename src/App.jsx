@@ -7,7 +7,7 @@ import Cars from "./Pages/Cars/Cars";
 import { injectSpeedInsights } from "@vercel/speed-insights";
 
 const App = () => {
-  injectSpeedInsights({ log: true });
+  injectSpeedInsights();
 
   const router = createBrowserRouter([
     {
