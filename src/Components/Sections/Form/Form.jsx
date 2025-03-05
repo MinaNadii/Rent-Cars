@@ -1,4 +1,4 @@
-import Phone from "../../../assets/iphone.png";
+import Phone from "../../../assets/iPhone.png";
 import ios from "../../../assets/ios.png";
 import andriod from "../../../assets/andriod.png";
 
