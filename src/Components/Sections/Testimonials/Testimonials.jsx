@@ -60,7 +60,7 @@ const Testimonials = () => {
           <HeaderCards h2={"testimonials"} p={"what people say about us?"} />
         </header>
 
-        <div className="p-10 ">
+        <div className="p-10 max-md:px-5 ">
           <Swiper
             loop={true}
             spaceBetween={10}
