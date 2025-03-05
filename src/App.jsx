@@ -4,9 +4,11 @@ import { RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import CarDetails from "./Pages/Cars/CarDetails";
 import Cars from "./Pages/Cars/Cars";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+import { injectSpeedInsights } from "@vercel/speed-insights";
 
 const App = () => {
+  injectSpeedInsights({ log: true });
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -31,7 +33,6 @@ const App = () => {
   return (
     <>
       <RouterProvider router={router}></RouterProvider>
-      <SpeedInsights />
     </>
   );
 };
