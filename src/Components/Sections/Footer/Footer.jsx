@@ -116,14 +116,14 @@ const Footer = () => {
     <>
       <section className="bg-[#051C34]">
         <div className="myContainer">
-          <div className="grid grid-cols-2   gap-y-10 justify-items-start lg:grid-cols-5 py-10">
+          <div className="grid grid-cols-2 md:justify-items-center  gap-x-10 px-5 gap-y-10 justify-items-start lg:grid-cols-5 py-10">
             <div>
               <img src={Logo} alt="" />
               <ul className="mt-5  space-y-4">
                 {contact.map((item, index) => (
-                  <li className="flex items-center gap-4 text-white ">
+                  <li className="flex items-center gap-4  text-white ">
                     <img src={item.icon} alt={item.icon} />
-                    <a href={item.href} key={index}>
+                    <a href={item.href} key={index} className="w-[178px]">
                       {item.name}
                     </a>
                   </li>
