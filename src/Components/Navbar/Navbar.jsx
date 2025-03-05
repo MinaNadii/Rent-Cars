@@ -28,7 +28,9 @@ const Navbar = () => {
   return (
     <div className=" lg:w-full px-4 py-11 mx-auto">
       <nav className="flex items-center justify-between lg:justify-around">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
         <Menu menuLinks={NavLinks} />
         <div className="flex gap-2 max-lg:hidden p-4 text-20 ">
           <button className="cursor-pointer px-2">Sign In</button>

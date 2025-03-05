@@ -13,17 +13,17 @@ const Form = () => {
                 <input
                   type="text"
                   placeholder="Enter your Name"
-                  className="w-full p-3 bg-[#CEDCFF]  border border-gray-300 rounded-3xl"
+                  className="w-full p-3 bg-[#CEDCFF]  border border-gray-300 rounded-lg"
                 />
                 <input
                   type="text"
                   placeholder="Enter your email"
-                  className="w-full p-3 bg-[#CEDCFF] border border-gray-300 rounded-3xl"
+                  className="w-full p-3 bg-[#CEDCFF] border border-gray-300 rounded-lg"
                 />
                 <input
                   type="text"
                   placeholder="Enter your Phone"
-                  className="w-full bg-[#CEDCFF] p-3 border border-gray-300 rounded-3xl"
+                  className="w-full bg-[#CEDCFF] p-3 border border-gray-300 rounded-lg"
                 />
                 <button className=" bg-mainColor text-white p-3 rounded-lg">
                   Subscribe
