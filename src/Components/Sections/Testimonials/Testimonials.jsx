@@ -79,7 +79,7 @@ const Testimonials = () => {
           >
             {testimonialsData.map((person, index) => (
               <div className="" key={index}>
-                <SwiperSlide className="">
+                <SwiperSlide className="bg-white">
                   <div className="flex  shadow-lg !w-[500px] px-4 rounded-2xl">
                     <img
                       src={person.image}

@@ -115,7 +115,7 @@ const Footer = () => {
   return (
     <>
       <section className="bg-[#051C34]">
-        <div className="max-md:myContianer mx-auto">
+        <div className="myContainer">
           <div className="grid grid-cols-2   gap-y-10 justify-items-start lg:grid-cols-5 py-10">
             <div>
               <img src={Logo} alt="" />
